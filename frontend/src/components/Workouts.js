@@ -5,7 +5,7 @@ const Workouts = () => {
   const [workouts, setWorkouts] = useState([]);
 
   useEffect(() => {
-    axios.get('https://organic-acorn-g7pwg5pgwpc964p-8000.app.github.dev/api/workouts')
+    axios.get('https://organic-acorn-g7pwg5pgwpc964p-8000.app.github.dev/api/workouts/')
       .then(response => setWorkouts(response.data))
       .catch(error => console.error('Error fetching workouts:', error));
   }, []);

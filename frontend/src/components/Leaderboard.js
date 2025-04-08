@@ -5,7 +5,7 @@ const Leaderboard = () => {
   const [leaders, setLeaders] = useState([]);
 
   useEffect(() => {
-    axios.get('https://organic-acorn-g7pwg5pgwpc964p-8000.app.github.dev/api/leaderboard')
+    axios.get('https://organic-acorn-g7pwg5pgwpc964p-8000.app.github.dev/api/leaderboard/')
       .then(response => setLeaders(response.data))
       .catch(error => console.error('Error fetching leaderboard:', error));
   }, []);

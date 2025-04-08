@@ -5,7 +5,7 @@ const Teams = () => {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    axios.get('https://organic-acorn-g7pwg5pgwpc964p-8000.app.github.dev/api/teams')
+    axios.get('https://organic-acorn-g7pwg5pgwpc964p-8000.app.github.dev/api/teams/')
       .then(response => setTeams(response.data))
       .catch(error => console.error('Error fetching teams:', error));
   }, []);

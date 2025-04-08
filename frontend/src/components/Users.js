@@ -5,7 +5,7 @@ const Users = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('https://organic-acorn-g7pwg5pgwpc964p-8000.app.github.dev/api/users')
+    axios.get('https://organic-acorn-g7pwg5pgwpc964p-8000.app.github.dev/api/users/')
       .then(response => setUsers(response.data))
       .catch(error => console.error('Error fetching users:', error));
   }, []);
